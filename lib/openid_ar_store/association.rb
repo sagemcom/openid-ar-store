@@ -2,7 +2,7 @@ require 'openid/association'
 require 'time'
 
 module OpenIDArStore
-  class Association < ActiveRecord::Base
+  class Association < ApplicationRecord
     self.table_name = 'open_id_associations'
 
     def from_record
